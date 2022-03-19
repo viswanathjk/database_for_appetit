@@ -13,19 +13,19 @@ Once the order is picked up from the restaurant the customer will be provided wi
 # Database:
 The Appétit Database will store the customer, restaurant, and delivery partner details.
 
-* The Customer entity will include the Name, Contact details and Address (including zip code, street and flat number) attributes.
+* The **Customer** entity will include the Name, Contact details and Address (including zip code, street and flat number) attributes.
 
-* The Restaurant entity will include the Name, Location, Menu (Name, ingredients, calories, nutrients) and Feedback attributes.
+* The **Restaurant** entity will include the Name, Location, Menu (Name, ingredients, calories, nutrients) and Feedback attributes.
 
-* The Order entity will include Order number, details, Price breakup, Order timestamp and
+* The **Order** entity will include Order number, details, Price breakup, Order timestamp and
 Order status.
 
-* The Delivery Partner entity will include the Partner name, Location, Status and Rating
+* The **Delivery Partner** entity will include the Partner name, Location, Status and Rating
 attributes.
 
-* Coupons entity will include the coupon name, code, discount percentage, expiry date and terms attributes.
+* **Coupons** entity will include the coupon name, code, discount percentage, expiry date and terms attributes.
 
-* Rating entity will include rating, order id for restaurants and delivery partners.
+* **Rating** entity will include rating, order id for restaurants and delivery partners.
 
 # Appetit Entity Relationship Diagram
 ![ERD Diagram](/Diagrams/appetit_ERD.jpg)
