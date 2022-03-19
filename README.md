@@ -29,3 +29,37 @@ attributes.
 
 # Appetit Entity Relationship Diagram
 ![ERD Diagram](/Diagrams/appetit_ERD.jpg)
+
+# Assumptions:
+1.	The Appetit app only works in Buffalo city.
+2.	A Restaurant is assumed to only have a single menu (list of items).
+3.	A customer can place only one order with a specific restaurant at a time.
+4.	You can only give one rating for a restaurant and delivery partner for a specific order.
+5.	You can apply utmost one coupon for a specific order.
+6.	Discounts are item/restaurant specific and are different from coupons.
+7.	Customers who have opted for a subscription are associated with a specific coupon code (“VIP” for instance) that gives them an offer on all orders.
+8.	A customer can have only one coupon at one point in time.
+9.	Only a single payment can be made for a specific order.
+
+# Business Rules:
+1.	Customers place zero or more orders but each Order corresponds to only one customer.
+2.	Each Order belongs to exactly one restaurant but a Restaurant can have zero or more orders.
+3.	A Restaurant will have at least one item but an Item will belong to only one restaurant.
+4.	An Item in a specific Restaurant can have zero or more Orders (Order_SubTotal) but each Item in an Order will have exactly one restaurant-specific Item.
+5.	An Order contains at least one item but each Item in Order Subtotal will have exactly one Order.
+6.	Each Order will have exactly one Payment, one Delivery Rating and one Restaurant Rating and vice-versa.
+7.	An Order can have utmost one coupon applied but each Coupon can be applied on zero or more orders.
+8.	An Order will have only one delivery partner but each Delivery Partner can deliver zero or more orders.
+9.	A Delivery Partner and Restaurant can have zero or more ratings but each Delivery Rating or Restaurant Rating corresponds to a single delivery partner or restaurant.
+
+
+# Database Relational Schema:
+![Relational Schema 1](/Diagrams/Database_diagram_1.png)
+
+![Relational Schema 2](/Diagrams/Database_diagram_2.png)
+
+![Relational Schema 3](/Diagrams/Database_diagram_3.png)
+
+# Database Diagram: 
+
+![Database Diagram](/Diagrams/Database_diagram_4.jpg)
